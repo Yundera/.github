@@ -6,13 +6,13 @@ As self hosters, we were tired of spending time fixing broken updates, applying 
 - That backup system you configured… when did you last verify it actually works?  
 - Those SSL certificates you set up manually… are they about to expire?
 
-Self hosting gives freedom, but these issues quietly becomes a burden.
+Self hosting gives freedom, but these "maintenance" issues quietly becomes a burden.
 That's why we've built this : An open source Private Cloud Server stack designed to make self hosting reliable and accessible. For this, we've built two layers:
 - MeshRouter : Domain management system for containerized applications, integrated with CasaIMG : An open source layer that allows domain-routing on any NAS/Servers, with an AppStore of curated list of available applications, with configurations that are reviewed, maintained, and updated continuously. It's free, 100% open source, and easy to use with docker : https://nsl.sh or https://github.com/Yundera/mesh-router-root 
 - Yundera : Based on MeshRouter, a private server that's available in one click. Imagine it as a Virtual NAS. A server that has been configured with Meshrouter, with all open source apps up to date and maintained by our community.
-- CasaIMG - Docker-based CasaOS image manager with mesh router compatibility
+Everything is finalized with CasaIMG, a Docker-based CasaOS image manager with mesh router compatibility, so that you have a nice visual interface for your server. 
 
-If you are already a self-hoster, Yundera lets you forget about broken updates, manual fixes, and unexpected regressions.   We handle app updates and maintenance so your services keep running.
+If you are already a self-hoster, Yundera lets you forget about broken updates, manual fixes, and unexpected regressions.  We handle app updates and maintenance so your services keep running.
 
 If you are new to self hosting, Yundera gives you a safe starting point. You can install apps knowing they are actively maintained and kept up to date, without having to configure a domain, understanding servers, etc... The opposite in terms of complexity than AWS.
 
@@ -64,7 +64,7 @@ You can help by:
 - Reporting bugs and issues in our discord : https://discord.gg/f2qQUJBHY6 
 - Submitting pull requests
 - Reviewing app configurations
-- Sharing feedback from real usage
+- Sharing feedback from real usage and talk to us or to your friends about this :)
 
 ---
 
