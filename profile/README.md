@@ -7,9 +7,9 @@ As self hosters, we were tired of spending time fixing broken updates, applying 
 - Those SSL certificates you set up manually… are they about to expire?
 
 Self hosting gives freedom, but these "maintenance" issues quietly becomes a burden.
-That's why we've built this : An open source Private Cloud Server stack designed to make self hosting reliable and accessible. For this, we've built two layers:
+That's why we've built this : An open source Private Cloud Server stack making self hosting reliable and accessible. For this, we've built two layers:
 - MeshRouter : Domain management system for containerized applications, integrated with CasaIMG : An open source layer that allows domain-routing on any NAS/Servers, with an AppStore of curated list of available applications, with configurations that are reviewed, maintained, and updated continuously. It's free, 100% open source, and easy to use with docker : https://nsl.sh or https://github.com/Yundera/mesh-router-root 
-- Yundera : Based on MeshRouter, a private server that's available in one click. Imagine it as a Virtual NAS. A server that has been configured with Meshrouter, with all open source apps up to date and maintained by our community.
+- Yundera : Based on MeshRouter, a private server that's available in one click. Imagine it as a Virtual NAS. A server that has been configured with Meshrouter, with open source apps up to date and improved by our team or the community with the Yundera Creator Program that rewards developpers for maintaining apps in Yundera.
 Everything is finalized with CasaIMG, a Docker-based CasaOS image manager with mesh router compatibility, so that you have a nice visual interface for your server. 
 
 If you are already a self-hoster, Yundera lets you forget about broken updates, manual fixes, and unexpected regressions.  We handle app updates and maintenance so your services keep running.
