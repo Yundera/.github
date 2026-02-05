@@ -20,8 +20,8 @@ If you are new to self hosting, Yundera gives you a safe starting point. You can
 
 ## 🚀 So overall, how does Yundera look like?
 
-Yundera is an open source Private Cloud Server stack designed to make self hosting reliable and accessible.
-The routing is based on Meshrouter and the interface is based on CasaOS, a famous open source interface.
+Yundera is an open source Private Cloud Server stack making self hosting reliable and accessible.
+The routing is based on Meshrouter and the interface is based on CasaOS, a famous open source interface. All Open source are kept up to date by us.
 
 <p align="center">
   <img src="https://yundera.com/web/image/2023-b9ca9f4c/image.png" width="800" alt="Yundera Snapshot" />
