@@ -1,4 +1,4 @@
-## Hello! Welcome to Yundera
+## Hello! Welcome to Yundera, offering a private server ready from day 1 with open source apps up to date, configured and a domain with it. Everything open source.
 
 As self hosters, we were tired of spending time fixing broken updates, applying manual fixes, and dealing with unexpected regressions.. Imagine these questions:
 - That Immich/Nextcloud instance you set up… when did you last update it?  
