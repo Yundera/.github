@@ -71,8 +71,9 @@ You can help by:
 ## 📚 Documentation and resources
 
 - Blog and tutorials: https://yundera.com/blog/tutorial-1 
-- Community discussions: Join our discord : https://discord.gg/f2qQUJBHY6 
-
+- Community discussions: Join our discord : https://discord.gg/f2qQUJBHY6
+- Documentation: https://docusaurus-yunderateam.nsl.sh
+ 
 We aim to keep documentation simple, practical, and beginner friendly.
 
 ---
