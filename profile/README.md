@@ -1,94 +1,80 @@
-## Yundera, A managed private server with open-source apps, ready from day 1.
+## Yundera: a managed private server with open-source apps, ready from day 1.
 
-As self hosters, we were tired of spending time fixing broken updates, applying manual fixes, and dealing with unexpected regressions.. Imagine these questions:
-- That Immich/Nextcloud instance you set up… when did you last update it?  
-- Those Docker containers running critical services… are they still on versions from last year?  
-- That backup system you configured… when did you last verify it actually works?  
-- Those SSL certificates you set up manually… are they about to expire?
+As self-hosters, we were tired of spending time fixing broken updates, applying manual fixes and dealing with unexpected regressions. Ask yourself:
 
-Self hosting gives freedom, but these "maintenance" issues quietly becomes a burden.
-That's why we've built this : An open source Private Cloud Server stack making self hosting reliable and accessible. For this, we've built two layers:
-- MeshRouter : Domain management system for containerized applications, integrated with CasaIMG : An open source layer that allows domain-routing on any NAS/Servers, with an AppStore of curated list of available applications, with configurations that are reviewed, maintained, and updated continuously. It's free, 100% open source, and easy to use with docker : https://nsl.sh or https://github.com/Yundera/mesh-router-root 
-- Yundera : Based on MeshRouter, a private server that's available in one click. Imagine it as a Virtual NAS. A server that has been configured with Meshrouter, with open source apps up to date and improved by our team or the community with the Yundera Creator Program that rewards developpers for maintaining apps in Yundera.
-Everything is finalized with CasaIMG, a Docker-based CasaOS image manager with mesh router compatibility, so that you have a nice visual interface for your server. : https://yundera.com
+- That Immich or Nextcloud instance you set up: when did you last update it?
+- Those Docker containers running critical services: are they still on last year's versions?
+- That backup system you configured: when did you last check that it actually restores?
+- Those SSL certificates you set up by hand: are they about to expire?
 
-If you are already a self-hoster, Yundera lets you forget about broken updates, manual fixes, and unexpected regressions.  We handle app updates and maintenance so your services keep running.
+Self-hosting gives freedom, but maintenance quietly becomes a burden. So we built an open-source Private Cloud Server stack that makes self-hosting reliable and accessible, in two layers:
 
-If you are new to self hosting, Yundera gives you a safe starting point. You can install apps knowing they are actively maintained and kept up to date, without having to configure a domain, understanding servers, etc... The opposite in terms of complexity than AWS.
+- **NSL.SH (MeshRouter)**: a free, MIT-licensed layer that brings any server or NAS online in one click. Every app gets its own subdomain (`app-you.nsl.sh`) with HTTPS, even behind CGNAT, with no port to open and no DNS to configure. It ships with **Maison**, our dashboard and app manager, an App Store of curated apps whose configurations are reviewed and kept up to date, single sign-on with 2FA in front of every app, and nightly self-updates. [nsl.sh](https://nsl.sh) · [mesh-router-root](https://github.com/Yundera/mesh-router-root)
+- **Yundera**: the same open stack on a server we provide and maintain for you. Think of it as a virtual NAS, available in one click: apps kept up to date by our team and by developers in the Yundera Creator Program, backups included, nothing to run at home. [yundera.com](https://yundera.com)
+
+If you already self-host, Yundera lets you forget about broken updates, manual fixes and regressions. If you are new to it, Yundera is a safe starting point: install apps knowing they are maintained, without configuring a domain or learning server administration.
 
 ---
 
-## 🚀 So overall, how does Yundera look like?
+## How the stack fits together
 
-Yundera is an open source Private Cloud Server stack making self hosting reliable and accessible.
-The routing is based on Meshrouter and the interface is based on CasaOS, a famous open source interface. All Open source are kept up to date by us.
-
-<p align="center">
-  <img src="https://yundera.com/web/image/2023-b9ca9f4c/image.png" width="800" alt="Yundera Snapshot" />
-</p>
+| Layer | What it does | Repository |
+| --- | --- | --- |
+| Routing | Free subdomains, HTTPS, tunnel through CGNAT | [mesh-router-root](https://github.com/Yundera/mesh-router-root) |
+| Box template | Installs and self-updates everything below | [mesh-router-template-root](https://github.com/Yundera/mesh-router-template-root) |
+| Sign-in | Single sign-on (Dex + Authelia) with 2FA, one login for every app | [mesh-router-template-root](https://github.com/Yundera/mesh-router-template-root) |
+| Dashboard | Maison: home screen, App Store, backups, domains, resource history | [Maison](https://github.com/Yundera/Maison) |
+| Files | Web file manager | [files](https://github.com/Yundera/files) |
+| Apps | Curated App Store | [AppStore](https://github.com/Yundera/AppStore) |
 
 It helps you:
-- Install open source apps with confidence (one click install - no configuration on domain.
+
+- Install open-source apps with confidence: one click, no domain to configure
 - Avoid updates that break your setup
 - Run services on infrastructure you control
-- Keep predictable costs and full data ownership
-We make **self hosting simple, accessible, and practical**. Discover the open source tools that help individuals, developers, and small organizations run their own services
-files, media, apps, and AI
-on servers they control.
+- Keep predictable costs and full ownership of your data
 
-No lock in.
-No hidden SaaS dependencies.
-Just open source, running on your own infrastructure.
+No lock-in. No hidden SaaS dependencies. Open source, running on your own infrastructure.
 
 ---
 
-## 🧩 What you will find in this GitHub organization
+## What you will find in this organization
 
-This organization hosts:
 - Core infrastructure components
 - Networking and routing tools
 - App templates and integrations
-- Utilities for self hosting and automation
+- Utilities for self-hosting and automation
 - Documentation and examples
 
-Each repository is focused, modular, and designed to be reusable.
+Each repository is focused, modular and designed to be reusable.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions from the community!
-
-You can help by:
-- Taking part in our Creator Program : https://yundera.com/creator-program 
-- Reporting bugs and issues in our discord : https://discord.gg/f2qQUJBHY6 
-- Submitting pull requests
-- Reviewing app configurations
-- Sharing feedback from real usage and talk to us or to your friends about this :)
+- Join our Creator Program: [yundera.com/creator-program](https://yundera.com/creator-program)
+- Report bugs on our Discord: [discord.gg/f2qQUJBHY6](https://discord.gg/f2qQUJBHY6)
+- Submit pull requests
+- Review app configurations
+- Share feedback from real usage, with us or with your friends
 
 ---
 
-## 📚 Documentation and resources
+## Documentation and resources
 
-- Blog and tutorials: https://yundera.com/blog/tutorial-1 
-- Community discussions: Join our discord : https://discord.gg/f2qQUJBHY6
-- Documentation: https://docusaurus-yunderateam.nsl.sh
-- Tech News Digest: https://ghost-yunderalabs.nsl.sh
- 
-We aim to keep documentation simple, practical, and beginner friendly.
+- Blog and tutorials: [yundera.com/blog/tutorial-1](https://yundera.com/blog/tutorial-1)
+- Community: [Discord](https://discord.gg/f2qQUJBHY6)
+- Documentation: [docusaurus-yunderateam.nsl.sh](https://docusaurus-yunderateam.nsl.sh)
+- Tech News Digest: [ghost-yunderalabs.nsl.sh](https://ghost-yunderalabs.nsl.sh)
 
 ---
 
-## 🌍 Our philosophy
+## Our philosophy
 
-We believe:
-- Self hosting should be accessible, not reserved for experts
-- Open source tools are powerful when they are easy to use
+- Self-hosting should be accessible, not reserved for experts
+- Open-source tools are powerful when they are easy to use
 - Owning your infrastructure means owning your freedom
 
-Yundera exists to lower the barrier between people and their own servers. 
+Yundera exists to lower the barrier between people and their own servers.
 
----
-
-Thanks for stopping by.
-If you like self hosting, you are in the right place 🙂
+Thanks for stopping by. If you like self-hosting, you are in the right place 🙂
